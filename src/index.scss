@@ -15,6 +15,13 @@ $colores:
     transpGris: rgba(200, 200, 200, .9)
 );
 
+$fondoIcono : 50px;
+
 body {
-    background-color: map-get($colores,storm1)
+    background-color: map-get($colores,storm3)
+}
+.carrito {
+    padding: 5px;
+    background-color: map-get($colores,storm1);
+    border-radius: 50%;
 }

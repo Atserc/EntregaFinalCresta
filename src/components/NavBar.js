@@ -1,10 +1,11 @@
 import React from 'react'
+import CartWidget from './CartWidget'
 
 function NavBar({HoF}) {
 
     if (HoF === "header") {
         return (
-            <nav id="BarraNav" className="flex items-center">
+            <nav id="BarraNav" className="flex items-center px-3">
                 <a href="#" className="py-2 px-2">
                     Inicio
                 </a>
@@ -12,7 +13,7 @@ function NavBar({HoF}) {
                     Productos
                 </a>
                 <a href="#">
-                    <img src="" alt="" />
+                    <CartWidget />
                 </a>
             </nav>
         )
