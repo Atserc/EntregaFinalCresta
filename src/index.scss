@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$colores:
+(
+    storm1: #CBD3E0,
+	storm2: #92A3C1,
+	storm3: #607298,
+	storm4: #425177,
+	storm5: #19294D,
+    transpBajo: rgba(0, 0, 0, 0.3),
+    transpMedio: rgba(0, 0, 0, 0.5),
+    transpAlto: rgba(0, 0, 0, 0.9),
+    transpGris: rgba(200, 200, 200, .9)
+);
+
+body {
+    background-color: map-get($colores,storm1)
+}
