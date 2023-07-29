@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Header nombre={nombre} />
+      <Header />
       <ItemListContainer nombre={nombre} />
       <Main />
       <Footer />
