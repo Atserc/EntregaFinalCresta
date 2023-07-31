@@ -4,7 +4,12 @@ function Footer() {
     return (
         <footer id="footer" className="footer flex justify-start items-center">
             <p>Copyright &copy;</p>
-            <NavBar HoF="footer"/>
+            <a href="#" className="py-2 px-2">
+                    Inicio
+                </a>
+            <a href="#" className="py-2 px-2">
+                    Productos
+            </a>
         </footer>
     );
   }
