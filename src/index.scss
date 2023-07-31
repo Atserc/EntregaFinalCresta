@@ -9,6 +9,8 @@ $colores:
 	storm3: #607298,
 	storm4: #425177,
 	storm5: #19294D,
+    celesteArg : #75AADB,
+    blancoIC : #FFFFFF,
     transpBajo: rgba(0, 0, 0, 0.3),
     transpMedio: rgba(0, 0, 0, 0.5),
     transpAlto: rgba(0, 0, 0, 0.9),
@@ -17,10 +19,22 @@ $colores:
 
 $fondoIcono : 50px;
 
-body {
+html, body, #root {
     height: 100%;
-    background-color: map-get($colores,storm3)
 }
+
+#root {
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($colores,storm3);
+}
+
+.logo{
+    width: 120px;
+    height: 80px;
+    border-radius: 25%;
+}
+
 .carrito {
     padding: 5px;
     background-color: map-get($colores,storm1);
