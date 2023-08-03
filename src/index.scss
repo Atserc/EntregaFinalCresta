@@ -10,11 +10,15 @@ $colores:
 	storm4: #425177,
 	storm5: #19294D,
     celesteArg : #75AADB,
-    blancoIC : #FFFFFF,
+    tonoBlanco1 : #FFFFFF,
+    tonoBlanco2 : #F8F8F8,
+    tonoBlanco3 : #CECECE,
     transpBajo: rgba(0, 0, 0, 0.3),
     transpMedio: rgba(0, 0, 0, 0.5),
     transpAlto: rgba(0, 0, 0, 0.9),
     transpGris: rgba(200, 200, 200, .9)
+
+    
 );
 
 $fondoIcono : 50px;
@@ -26,7 +30,7 @@ html, body, #root {
 #root {
     display: flex;
     flex-direction: column;
-    background-color: map-get($colores,storm3);
+    background-color: map-get($colores,storm2);
 }
 
 .logo{
@@ -35,8 +39,58 @@ html, body, #root {
     border-radius: 25%;
 }
 
+.header {
+    background-color: map-get($colores,storm3);
+}
+
+.footer {
+    color: white;
+    background-color: map-get($colores,storm4);
+    justify-content: center;
+}
+
+#botonDL {
+    position: relative;
+    background-color: map-get($colores,tonoBlanco2);
+    width: 60px;
+    height: 30px;
+    box-shadow: inset 4px 4px 6px map-get($colores,tonoBlanco3),
+                inset -4px -4px 6px map-get($colores,tonoBlanco1);
+    border-radius: 20px;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: scale(.7);
+    background-color: map-get($colores,storm1);
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px map-get($colores,storm1),
+                -3px -3px 8px map-get($colores,storm2);
+}
+
+#botonDL .toggle.active {
+    left : 30px;
+    background-color: map-get($colores,storm2);
+}
+
 .carrito {
     padding: 5px;
     background-color: map-get($colores,storm1);
     border-radius: 50%;
+}
+
+.itemCount {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: map-get($colores,tonoBlanco1);
+    background-color: map-get($colores,storm5);
+}
+.itemCountButton {
+    font-weight: 800;
 }

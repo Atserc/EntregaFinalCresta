@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import imagen from "../images/logo.png"
+import imagen from "../images/logo.jpg"
 function Header() {
 
     return (
