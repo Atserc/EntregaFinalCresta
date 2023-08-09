@@ -1,5 +1,7 @@
-import NavBar from "./NavBar";
-import imagen from "../images/logo.jpg"
+import React from "react";
+import NavBar from "../widgets/NavBar";
+import imagen from "../../images/logo.jpg"
+
 function Header() {
 
     return (

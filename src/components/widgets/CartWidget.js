@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen from "../images/icons/cart.svg"
+import imagen from "../../images/icons/cart.svg"
 
 function CartWidget() {
   return (

@@ -1,7 +1,7 @@
-import Main from "./components/Main"
-import Footer from "./components/Footer"
-import Header from "./components/Header";
-import ItemListContainer from "./components/ItemListContainer";
+import Main from "./components/layout/Main"
+import Footer from "./components/layout/Footer"
+import Header from "./components/layout/Header";
+import ItemListContainer from "./components/layout/ItemListContainer";
 
 function App() {
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import sol from "../images/icons/sun.svg"
-import luna from "../images/icons/moon.svg"
+import sol from "../../images/icons/sun.svg"
+import luna from "../../images/icons/moon.svg"
 
 function DarkLight() {
   

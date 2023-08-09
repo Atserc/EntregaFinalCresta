@@ -30,7 +30,6 @@ html, body, #root {
 #root {
     display: flex;
     flex-direction: column;
-    background-color: map-get($colores,storm2);
 }
 
 .logo{
@@ -40,10 +39,20 @@ html, body, #root {
 }
 
 .header {
+    flex: 0 0 auto;
     background-color: map-get($colores,storm3);
 }
-
+.ilm {
+    flex: 0 0 auto;
+    background-color: map-get($colores,storm2);
+}
+.main {
+    padding: 20px;
+    flex: 1;
+    background-color: map-get($colores,storm2);
+}
 .footer {
+    flex: 0 0 auto;
     color: white;
     background-color: map-get($colores,storm4);
     justify-content: center;
