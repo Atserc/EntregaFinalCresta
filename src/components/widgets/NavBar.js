@@ -12,9 +12,6 @@ function NavBar() {
             <a href="#" className={espaciado}>
                 Productos
             </a>
-            <a href="#" className={espaciado}>
-                Login
-            </a>
             <DarkLight />
             <a href="#" className={espaciado}>
                 <CartWidget />

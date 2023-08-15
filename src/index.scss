@@ -103,3 +103,21 @@ html, body, #root {
 .itemCountButton {
     font-weight: 800;
 }
+
+.tarjeta {
+background-color: map-get($colores,storm3);
+}
+
+.categoriaTarjeta {
+    color: map-get($colores,storm1);
+}
+
+.numero-formateado {
+    font-family: monospace;
+    unicode-bidi: bidi-override;
+}
+
+.botonDetalles {
+    margin-left: auto; 
+    display: block;
+}

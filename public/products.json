@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "categoria": "Rifle",
+      "arma": "AK47",
+      "nombre": "Safari Mesh",
+      "precio": 1270.34,
+      "urlImagen":"../../images/skins/Rifles/AK47/SafariMesh.png"
+    },
+    {
+        "id": 2,
+        "categoria": "Rifle",
+        "arma": "AK47",
+        "nombre": "Elite Build",
+        "precio": 1564.60,
+        "urlImagen":"../../images/skins/Rifles/AK47/EliteBuild.png"
+      },
+      {
+        "id": 3,
+        "categoria": "Rifle",
+        "arma": "M4A1-S",
+        "nombre": "Imminent Danger",
+        "precio": 550000,
+        "urlImagen":"../../images/skins/Rifles/M4A1-S/ImminentDamage.png"
+      },
+      {
+        "id": 4,
+        "categoria": "Pistola",
+        "arma": "Five-SeveN",
+        "nombre": "Coolant",
+        "precio": 11,
+        "urlImagen":"../../images/skins/Pistolas/Five-SeveN/Coolant.png"
+      },
+      {
+        "id": 5,
+        "categoria": "Pistola",
+        "arma": "Desert Eagle",
+        "nombre": "Oxide Blaze",
+        "precio": 126.84,
+        "urlImagen":"../../images/skins/Pistolas/Desert_Eagle/OxideBlaze.png"
+    }
+  ]
