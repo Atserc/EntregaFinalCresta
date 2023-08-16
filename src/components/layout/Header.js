@@ -1,4 +1,3 @@
-import React from "react";
 import NavBar from "../widgets/NavBar";
 import imagen from "../../images/logo.jpg"
 
@@ -14,4 +13,3 @@ function Header({nombre}) {
   }
 
 export default Header;
-  

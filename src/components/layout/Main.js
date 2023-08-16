@@ -1,14 +1,10 @@
-import React from "react";
-import Container from "./Container";
 import ItemListContainer from "./ItemListContainer";
 
 function Main(){
-
-    //vista
     return (
-        <main id="main" className="main grow px-2 py-2">
+        <main id="main" className="main px-2 py-2">
             <ItemListContainer />
-            <Container />
+            <br />
         </main>
     );
   }

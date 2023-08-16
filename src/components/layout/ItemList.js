@@ -1,6 +1,4 @@
-import React from 'react'
-
-function Presentacional(props) {
+function ItemList(props) {
     const estiloNumero = {
         style: 'decimal',
         maximumFractionDigits: 2,
@@ -27,4 +25,4 @@ function Presentacional(props) {
   )
 }
 
-export default Presentacional
+export default ItemList

@@ -1,14 +1,24 @@
-import React from 'react'
-import ItemCount from '../widgets/ItemCount'
-import Form from './Form'
+import { useEffect, useState } from 'react'
+import ItemList from './ItemList';
+
+function getProductos(setData){
+  fetch('../products.json')
+    .then(res=>res.json())
+    .then(json=>setData(json))
+  }
 
 function ItemListContainer() {
+
+  const [data,setData] = useState([])
+
+  useEffect(()=>{
+    getProductos(setData)
+  },[])
+
   return (
-    <div className='ilm'>
-        <ItemCount stock={10} inicial={1} onAdd={()=>{}}/>
-        <Form />
-    </div>
+    <ItemList data={data} />
   )
+  
 }
 
 export default ItemListContainer
