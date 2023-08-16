@@ -1,13 +1,20 @@
+import { NavLink } from "react-router-dom";
+
 function Footer() {
+
+    const espaciado = "py-2 px-3" 
+
     return (
         <footer id="footer" className="footer flex justify-start items-center">
-            <p>Copyright &copy;</p>
-            <a href="#" className="py-2 px-2">
+            <p className={espaciado}> 
+                Copyright &copy; - Lisandro Cresta
+            </p>
+            <NavLink to="/" className={espaciado}>
                     Inicio
-                </a>
-            <a href="#" className="py-2 px-2">
+            </NavLink>
+            <NavLink to="/Productos" className={espaciado}>
                     Productos
-            </a>
+            </NavLink>
         </footer>
     );
   }

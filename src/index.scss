@@ -58,6 +58,11 @@ html, body, #root {
     justify-content: center;
 }
 
+.active {
+    font-size: 120%;
+    font-weight: bold;
+}
+
 #botonDL {
     position: relative;
     background-color: map-get($colores,tonoBlanco2);

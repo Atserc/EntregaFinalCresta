@@ -1,21 +1,21 @@
-import React from 'react'
 import CartWidget from './CartWidget'
 import DarkLight from './DarkLight'
+import { NavLink } from 'react-router-dom'
 
 function NavBar() {
     const espaciado = "py-2 px-2" 
     return (
         <nav id="BarraNav" className="flex items-center">
-            <a href="#" className={espaciado}>
+            <NavLink to="/" className={espaciado}>
                 Inicio
-            </a>
-            <a href="#" className={espaciado}>
+            </NavLink>
+            <NavLink to="/Productos" className={espaciado}>
                 Productos
-            </a>
+            </NavLink>
             <DarkLight />
-            <a href="#" className={espaciado}>
+            <NavLink to="/Carrito" className={espaciado}>
                 <CartWidget />
-            </a>
+            </NavLink>
         </nav>
     )
 }

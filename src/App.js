@@ -1,17 +1,16 @@
 import Main from "./components/layout/Main"
 import Footer from "./components/layout/Footer"
 import Header from "./components/layout/Header";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
 
-  let nombre = "vacio"
-
   return (
-    <>
-      <Header nombre={nombre} />
+    <BrowserRouter>
+      <Header />
       <Main />
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

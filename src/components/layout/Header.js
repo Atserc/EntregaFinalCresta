@@ -1,12 +1,19 @@
 import NavBar from "../widgets/NavBar";
 import imagen from "../../images/logo.jpg"
+import { NavLink } from "react-router-dom";
 
-function Header({nombre}) {
+function Header() {
+
+    let nombre = "vacio"
 
     return (
         <header id="header" className="header flex justify-between items-center">
-            <img src={imagen} alt="logo" className="logo py-3 px-2" />
+            <NavLink to="/">
+                <img src={imagen} alt="logo" className="logo py-3 px-2" />
+            </NavLink>
+            
             <h1>Bienvenido a ArgSkins, {nombre} !</h1>
+            
             <NavBar />
         </header>
     );
