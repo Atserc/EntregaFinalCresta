@@ -8,7 +8,6 @@ function Main(){
 
     return (
         <main id="main" className={dark ? "main px-2 py-2 darkMode": "main px-2 py-2"}>
-            
             <Routes>
                 <Route path="/" element={<ItemListContainer />} />
                 <Route path="/Productos" element={<ItemListContainer />} />

@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "categoria": "Rifle",
+      "categoria": "Rifles",
       "arma": "AK47",
       "nombre": "Safari Mesh",
       "precio": 1270.34,
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "categoria": "Rifle",
+        "categoria": "Rifles",
         "arma": "AK47",
         "nombre": "Elite Build",
         "precio": 1564.60,
@@ -17,7 +17,7 @@
       },
       {
         "id": 3,
-        "categoria": "Rifle",
+        "categoria": "Rifles",
         "arma": "M4A1-S",
         "nombre": "Imminent Danger",
         "precio": 542300,
@@ -25,7 +25,7 @@
       },
       {
         "id": 4,
-        "categoria": "Pistola",
+        "categoria": "Pistolas",
         "arma": "Five-SeveN",
         "nombre": "Coolant",
         "precio": 11,
@@ -33,7 +33,7 @@
       },
       {
         "id": 5,
-        "categoria": "Pistola",
+        "categoria": "Pistolas",
         "arma": "Desert Eagle",
         "nombre": "Oxide Blaze",
         "precio": 126.84,

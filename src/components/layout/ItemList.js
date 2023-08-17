@@ -7,10 +7,9 @@ function ItemList(props) {
         minimumFractionDigits: 2
       };
   return (
-    <div>
         <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 x1:grid-cols-5 2x1:grid-cols-6 gap-8'>
             {props.data.length === 0 ? 
-            <p>Cargando . . .</p> 
+            <p>Sin Productos</p>
             : props.data.map((item,i) =>{
                 return(
                     <article key={i} className='tarjeta card shadow-md p-5 rounded-md duration-300 transition hover:scale-105'>
@@ -23,7 +22,6 @@ function ItemList(props) {
                 )
             })}
         </section>
-    </div>
   )
 }
 

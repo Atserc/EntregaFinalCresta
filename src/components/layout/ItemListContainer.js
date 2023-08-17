@@ -8,11 +8,14 @@ function getAllProducts(setData){
     .then(json=>setData(json))
   }
 
-function getProductByCategory(setData){ /* editar para que haga un mapeo por categoria */
+function getProductByCategory(setData,cat){
   fetch('../products.json')
-    .then(res=>res.json())
-    .then(json=>setData(json))
-  }
+    .then(res => res.json())
+    .then(json => {
+      const productosFiltrados = json.filter(producto => producto.categoria === cat);
+      setData(productosFiltrados);
+  })
+}
 
 function ItemListContainer() {
 
@@ -20,16 +23,12 @@ function ItemListContainer() {
   const result = useParams()
   useEffect(()=>{
     if (result.categoria){
-      getProductByCategory(setData)
-      console.log("cat")
+      getProductByCategory(setData,result.categoria)
     } else {
       getAllProducts(setData)
-      console.log("todo")
     }
   },[result.categoria])
 
-
-  
   return (
     <ItemList data={data} />
   )
