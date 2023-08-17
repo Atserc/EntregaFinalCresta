@@ -12,12 +12,18 @@ function ItemList(props) {
             <p>Sin Productos</p>
             : props.data.map((item,i) =>{
                 return(
-                    <article key={i} className='tarjeta card shadow-md p-5 rounded-md duration-300 transition hover:scale-105'>
-                        <img src={item.urlImagen} alt={item.nombre}/>
-                        <p className='categoriaTarjeta'>{item.categoria}</p>
-                        <h2 className='h-25'>{item.arma} | {item.nombre}</h2>
-                        <h3 className='h-25 '>${item.precio.toLocaleString('es-AR', estiloNumero)}</h3>
-                        <Link to={`/${item.categoria}/${item.id}`}><button className='botonDetalles'>Comprar</button></Link>
+                    <article key={i} className='tarjeta card shadow-md p-5 rounded-md duration-300 transition hover:scale-105 grid grid-cols-3 gap-4'>
+                        <div class="col-span-3 row-span-1">
+                        <img className="mx-auto mt-8" src={item.urlImagen} alt={item.nombre} width={200}/>
+                        </div>
+                        <div className="col-span-3">
+                            <p className='categoriaTarjeta'>{item.categoria}</p>
+                            <h2 >{item.arma} | {item.nombre}</h2>
+                            <h3 >${item.precio.toLocaleString('es-AR', estiloNumero)}</h3>
+                        </div>
+                        <div className="col-span-3">
+                            <Link to={`/${item.categoria}/${item.id}`}><button className='botonDetalles text-right'>Comprar</button></Link>
+                        </div>
                     </article>
                 )
             })}

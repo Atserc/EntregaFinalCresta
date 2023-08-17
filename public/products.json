@@ -5,7 +5,7 @@
       "arma": "AK47",
       "nombre": "Safari Mesh",
       "precio": 1270.34,
-      "urlImagen":"../../images/skins/Rifles/AK47/SafariMesh.png"
+      "urlImagen":"/imgSkins/Rifles/AK47/SafariMesh.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "arma": "AK47",
         "nombre": "Elite Build",
         "precio": 1564.60,
-        "urlImagen":"../../images/skins/Rifles/AK47/EliteBuild.png"
+        "urlImagen":"/imgSkins/Rifles/AK47/EliteBuild.png"
       },
       {
         "id": 3,
@@ -21,7 +21,7 @@
         "arma": "M4A1-S",
         "nombre": "Imminent Danger",
         "precio": 542300,
-        "urlImagen":"../../images/skins/Rifles/M4A1-S/ImminentDamage.png"
+        "urlImagen":"/imgSkins/Rifles/M4A1-S/ImminentDanger.png"
       },
       {
         "id": 4,
@@ -29,7 +29,7 @@
         "arma": "Five-SeveN",
         "nombre": "Coolant",
         "precio": 11,
-        "urlImagen":"../../images/skins/Pistolas/Five-SeveN/Coolant.png"
+        "urlImagen":"/imgSkins/Pistolas/Five-SeveN/Coolant.png"
       },
       {
         "id": 5,
@@ -37,7 +37,7 @@
         "arma": "Desert Eagle",
         "nombre": "Oxide Blaze",
         "precio": 126.84,
-        "urlImagen":"../../images/skins/Pistolas/Desert_Eagle/OxideBlaze.png"
+        "urlImagen":"/imgSkins/Pistolas/Desert_Eagle/OxideBlaze.png"
     },
     {
       "id": 7,
@@ -45,7 +45,7 @@
       "arma": "AK47",
       "nombre": "Ice Coaled",
       "precio": 10470.11,
-      "urlImagen":"../../images/skins/Rifles/AK47"
+      "urlImagen":"/imgSkins/Rifles/AK47"
     },
     {
       "id": 8,
@@ -53,7 +53,7 @@
       "arma": "AK47",
       "nombre": "Asiimov",
       "precio": 83345.45,
-      "urlImagen":"../../images/skins/Rifles/AK47"
+      "urlImagen":"/imgSkins/Rifles/AK47"
     },
     {
       "id": 9,
@@ -61,7 +61,7 @@
       "arma": "AK47",
       "nombre": "Point Disarray",
       "precio": 9312.06,
-      "urlImagen":"../../images/skins/Rifles/AK47"
+      "urlImagen":"/imgSkins/Rifles/AK47"
     },
     {
       "id": 10,
@@ -69,7 +69,7 @@
       "arma": "M4A1-S",
       "nombre": "Night Terror",
       "precio": 640.94,
-      "urlImagen":"../../images/skins/Rifles/M4A1-S"
+      "urlImagen":"/imgSkins/Rifles/M4A1-S"
     },
     {
       "id": 11,
@@ -77,7 +77,7 @@
       "arma": "M4A1-S",
       "nombre": "Nitro",
       "precio": 3013.50,
-      "urlImagen":"../../images/skins/Rifles/M4A1-S"
+      "urlImagen":"/imgSkins/Rifles/M4A1-S"
     },
     {
       "id": 12,
@@ -85,7 +85,7 @@
       "arma": "M4A1-S",
       "nombre": "Cyrex",
       "precio": 13938,
-      "urlImagen":"../../images/skins/Rifles/M4A1-S"
+      "urlImagen":"/imgSkins/Rifles/M4A1-S"
     },
     {
       "id": 13,
@@ -93,7 +93,7 @@
       "arma": "M4A1-S",
       "nombre": "Hyper Beast",
       "precio": 65170.30,
-      "urlImagen":"../../images/skins/Rifles/M4A1-S"
+      "urlImagen":"/imgSkins/Rifles/M4A1-S"
     },
     {
       "id": 14,
@@ -101,7 +101,7 @@
       "arma": "M4A4",
       "nombre": "Evil Daimyo",
       "precio": 1521.87,
-      "urlImagen":"../../images/skins/Rifles/M4A4"
+      "urlImagen":"/imgSkins/Rifles/M4A4"
     },
     {
       "id": 15,
@@ -109,7 +109,7 @@
       "arma": "M4A4",
       "nombre": "Tooth Fairy",
       "precio": 3769.33,
-      "urlImagen":"../../images/skins/Rifles/M4A4"
+      "urlImagen":"/imgSkins/Rifles/M4A4"
     },
     {
       "id": 16,
@@ -117,7 +117,7 @@
       "arma": "M4A4",
       "nombre": "In Living Color",
       "precio": 13931.79,
-      "urlImagen":"../../images/skins/Rifles/M4A4"
+      "urlImagen":"/imgSkins/Rifles/M4A4"
     },
     {
       "id": 17,
@@ -125,7 +125,7 @@
       "arma": "M4A4",
       "nombre": "Cyber Security",
       "precio": 16333.19,
-      "urlImagen":"../../images/skins/Rifles/M4A4"
+      "urlImagen":"/imgSkins/Rifles/M4A4"
     },
     {
       "id": 18,
@@ -133,7 +133,7 @@
       "arma": "P90",
       "nombre": "Grim",
       "precio": 245.80,
-      "urlImagen":"../../images/skins/Subfusiles/P90"
+      "urlImagen":"/imgSkins/Subfusiles/P90"
     },
     {
       "id": 19,
@@ -141,7 +141,7 @@
       "arma": "P90",
       "nombre": "Chopper",
       "precio": 584.25,
-      "urlImagen":"../../images/skins/Subfusiles/P90"
+      "urlImagen":"/imgSkins/Subfusiles/P90"
     },
     {
       "id": 20,
@@ -149,7 +149,7 @@
       "arma": "P250",
       "nombre": "Cassette",
       "precio": 67,
-      "urlImagen":"../../images/skins/Pistolas/P250"
+      "urlImagen":"/imgSkins/Pistolas/P250"
     },
     {
       "id": 21,
@@ -157,7 +157,7 @@
       "arma": "P250",
       "nombre": "Valence",
       "precio": 245.57,
-      "urlImagen":"../../images/skins/Pistolas/P250"
+      "urlImagen":"/imgSkins/Pistolas/P250"
     },
     {
       "id": 22,
@@ -165,7 +165,7 @@
       "arma": "P90",
       "nombre": "Vent Rush",
       "precio": 797.46,
-      "urlImagen":"../../images/skins/Subfusiles/P90"
+      "urlImagen":"/imgSkins/Subfusiles/P90"
     },
     {
       "id": 23,
@@ -173,7 +173,7 @@
       "arma": "P90",
       "nombre": "Asiimov",
       "precio": 14556.03,
-      "urlImagen":"../../images/skins/Subfusiles/P90"
+      "urlImagen":"/imgSkins/Subfusiles/P90"
     },
     {
       "id": 24,
@@ -181,7 +181,7 @@
       "arma": "XM1014",
       "nombre": "Blue Steel",
       "precio": 99.66,
-      "urlImagen":"../../images/skins/Pesadas/XM1014"
+      "urlImagen":"/imgSkins/Pesadas/XM1014"
     },
     {
       "id": 25,
@@ -189,6 +189,6 @@
       "arma": "XM1014",
       "nombre": "XOXO",
       "precio": 3132.25,
-      "urlImagen":"../../images/skins/Pesadas/XM1014"
+      "urlImagen":"/imgSkins/Pesadas/XM1014"
     }
   ]

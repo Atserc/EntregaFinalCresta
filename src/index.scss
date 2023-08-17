@@ -97,18 +97,6 @@ html, body, #root {
     border-radius: 50%;
 }
 
-.itemCount {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: map-get($colores,tonoBlanco1);
-    background-color: map-get($colores,storm5);
-}
-.itemCountButton {
-    font-weight: 800;
-}
-
 .tarjeta {
 background-color: map-get($colores,storm3);
 }
@@ -127,8 +115,13 @@ background-color: map-get($colores,storm3);
     display: block;
 }
 
-.detallesItem {
-    text-align: center;
-    align-items: center;
+.itemCount {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    color: map-get($colores,tonoBlanco1);
+    background-color: map-get($colores,storm5);
+}
+.itemCountButton {
+    font-weight: 800;
 }

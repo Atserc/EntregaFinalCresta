@@ -1,28 +1,21 @@
 import ItemCount from "../widgets/ItemCount";
 
 function ItemDetail(props) {
-
-    const estiloNumero = {
-        style: 'decimal',
-        maximumFractionDigits: 2,
-        minimumFractionDigits: 2
-      };
     
       const item = props.prod
-      console.log(item)
+      const precioLocal = parseInt(item.precio).toLocaleString('es-AR');
+
 
     return (
-        <p>a
-        {/*<section>
+        <section className="grid grid-cols-2 justify-items-center">
             <img src={item.urlImagen} alt={item.nombre}/>
-            <div>
+            <div className="justify-items-center">
                 <p >{item.categoria}</p>
                 <h2 >{item.arma} | {item.nombre}</h2>
-                <h3 >${item.precio.toLocaleString('es-AR', estiloNumero)}</h3>
+                <h3 >${precioLocal}</h3>
                 <ItemCount stock={10} inicial={1} onAdd={()=>{}}/>
             </div>
-        </section>*/}
-        </p>
+        </section>
     )
 }
 export default ItemDetail
