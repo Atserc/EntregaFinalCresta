@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ItemList(props) {
     const estiloNumero = {
         style: 'decimal',
@@ -16,7 +18,7 @@ function ItemList(props) {
                         <p className='categoriaTarjeta'>{item.categoria}</p>
                         <h2 className='h-25'>{item.arma} | {item.nombre}</h2>
                         <h3 className='h-25 '>${item.precio.toLocaleString('es-AR', estiloNumero)}</h3>
-                        <button className='botonDetalles'>Comprar</button>
+                        <Link to={`/${item.categoria}/${item.id}`}><button className='botonDetalles'>Comprar</button></Link>
                     </article>
                 )
             })}

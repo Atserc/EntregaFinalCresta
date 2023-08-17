@@ -2,10 +2,11 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
 
+    const dark = false
     const espaciado = "py-2 px-3" 
 
     return (
-        <footer id="footer" className="footer flex justify-start items-center">
+        <footer id="footer"  className={dark ? "footer flex justify-start items-center darkMode" :  "footer flex justify-start items-center"}>
             <p className={espaciado}> 
                 Copyright &copy; - Lisandro Cresta
             </p>
