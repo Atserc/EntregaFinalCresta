@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer id="footer"  className={dark ? "footer flex justify-start items-center darkMode" :  "footer flex justify-start items-center"}>
             <p className={espaciado}> 
-                Copyright &copy; - Lisandro Cresta
+                Copyright &copy; 2023 - Lisandro Cresta
             </p>
             <NavLink to="/" className={espaciado}>
                     Inicio

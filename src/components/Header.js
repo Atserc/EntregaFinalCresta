@@ -1,5 +1,5 @@
-import NavBar from "../widgets/NavBar";
-import imagen from "../../images/logo.jpg"
+import NavBar from "./widgets/NavBar";
+import imagen from "../images/logo.jpg"
 import { NavLink } from "react-router-dom";
 
 function Header() {

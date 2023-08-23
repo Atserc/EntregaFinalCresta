@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import ItemListContainer from "./ItemListContainer";
-import ItemDetailContainer from "./ItemDetailContainer";
+import ItemListContainer from "./layout/ItemListContainer";
+import ItemDetailContainer from "./layout/ItemDetailContainer";
+import Cart from "./layout/Cart";
 
 function Main(){
 
@@ -13,7 +14,7 @@ function Main(){
                 <Route path="/Productos" element={<ItemListContainer />} />
                 <Route path="/:categoria" element={<ItemListContainer />} />
                 <Route path="/:categoria/:id" element={<ItemDetailContainer />} />
-                <Route path="/Carrito" element={<p>Carrito</p>} />
+                <Route path="/Carrito" element={<Cart />} />
                 <Route path="*" element={<p>404: Ruta incorrecta</p>} />
             </Routes>
         </main>
