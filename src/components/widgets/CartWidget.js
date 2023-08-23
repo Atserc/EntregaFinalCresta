@@ -1,13 +1,18 @@
-import React from 'react'
+import { useContext } from 'react'
 import imagen from "../../images/icons/cart.svg"
 import { NavLink } from 'react-router-dom'
+import { contexto } from "../Context";
+
 
 function CartWidget() {
+
+  const valorDelContexto = useContext(contexto)
+
   return (
-    <NavLink to="/Carrito" className='carrito flex'>
+    <div className='carrito flex'>
         <img src={imagen} alt="carrito svg"/>
-        <p>0</p>
-    </NavLink>
+        {valorDelContexto.cantidadTotal}
+    </div>
   )
 }
 

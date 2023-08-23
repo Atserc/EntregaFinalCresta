@@ -13,7 +13,7 @@ function ItemList(props) {
             : props.data.map((item,i) =>{
                 return(
                     <article key={i} className='tarjeta card shadow-md p-5 rounded-md duration-300 transition hover:scale-105 grid grid-cols-3 gap-4'>
-                        <div class="col-span-3 row-span-1">
+                        <div className="col-span-3 row-span-1">
                         <img className="mx-auto mt-8" src={item.urlImagen} alt={item.nombre} width={200}/>
                         </div>
                         <div className="col-span-3">

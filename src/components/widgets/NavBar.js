@@ -6,8 +6,6 @@ function NavBar() {
     const espaciado = "py-2 px-2" 
     return (
         <nav id="BarraNav" className="flex items-center">
-            
-            
 
             <NavLink to="/Productos" className={espaciado}>
                 Todas las skins
