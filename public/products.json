@@ -446,5 +446,557 @@
       "nombre": "Neo-Noir",
       "precio": 9329.91,
       "urlImagen":"/imgSkins/Rifles/Neo-Noir.png"
+    },
+    {
+      "id": 58,
+      "categoria": "Rifles",
+      "arma": "SG 553",
+      "nombre": "Cyberforce",
+      "precio": 32.98,
+      "urlImagen":"/imgSkins/Rifles/Cyberforce.png"
+    },
+    {
+      "id": 59,
+      "categoria": "Rifles",
+      "arma": "SG 553",
+      "nombre": "Tiger Moth",
+      "precio": 223.64,
+      "urlImagen":"/imgSkins/Rifles/TigerMoth.png"
+    },
+    {
+      "id": 60,
+      "categoria": "Rifles",
+      "arma": "SG 553",
+      "nombre": "Dragon Tech",
+      "precio": 235.08,
+      "urlImagen":"/imgSkins/Rifles/DragonTech.png"
+    },
+    {
+      "id": 61,
+      "categoria": "Pesadas",
+      "arma": "Nova",
+      "nombre": "Bloomstick",
+      "precio": 2216.16,
+      "urlImagen":"/imgSkins/Pesadas/Bloomstick.png"
+    },
+    {
+      "id": 62,
+      "categoria": "Rifles",
+      "arma": "FAMAS",
+      "nombre": "Meow 36",
+      "precio": 28.15,
+      "urlImagen":"/imgSkins/Rifles/Meow36.png"
+    },
+    {
+      "id": 63,
+      "categoria": "Rifles",
+      "arma": "FAMAS",
+      "nombre": "Commemoration",
+      "precio": 5418.31,
+      "urlImagen":"/imgSkins/Rifles/Commemoration.png"
+    },
+    {
+      "id": 64,
+      "categoria": "Rifles",
+      "arma": "FAMAS",
+      "nombre": "Valence",
+      "precio": 692.16,
+      "urlImagen":"/imgSkins/Rifles/Valence.png"
+    },
+    {
+      "id": 65,
+      "categoria": "Cuchillos",
+      "arma": "Shadow Daggers",
+      "nombre": "Ultraviolet",
+      "precio": 42021.82,
+      "urlImagen":"/imgSkins/Cuchillos/sdUltraviolet.png"
+    },
+    {
+      "id": 66,
+      "categoria": "Rifles",
+      "arma": "Galil AR",
+      "nombre": "Firefight",
+      "precio": 128.94,
+      "urlImagen":"/imgSkins/Rifles/Firefight.png"
+    },
+    {
+      "id": 67,
+      "categoria": "Rifles",
+      "arma": "SSG 08",
+      "nombre": "Dragon Fire",
+      "precio": 4677.68,
+      "urlImagen":"/imgSkins/Rifles/DragonFire.png"
+    },
+    {
+      "id": 68,
+      "categoria": "Rifles",
+      "arma": "SSG 08",
+      "nombre": "Mainframe 001",
+      "precio": 20.14,
+      "urlImagen":"/imgSkins/Rifles/Mainframe001.png"
+    },
+    {
+      "id": 69,
+      "categoria": "Rifles",
+      "arma": "SSG 08",
+      "nombre": "Detour",
+      "precio": 2605.72,
+      "urlImagen":"/imgSkins/Rifles/Detour.png"
+    },
+    {
+      "id": 70,
+      "categoria": "Rifles",
+      "arma": "SSG 08",
+      "nombre": "Fever Dream",
+      "precio": 157.62,
+      "urlImagen":"/imgSkins/Rifles/FeverDream.png"
+    },
+    {
+      "id": 71,
+      "categoria": "Rifles",
+      "arma": "SSG 08",
+      "nombre": "Turbo Peek",
+      "precio": 1714.31,
+      "urlImagen":"/imgSkins/Rifles/TurboPeek.png"
+    },
+    {
+      "id": 72,
+      "categoria": "Rifles",
+      "arma": "SCAR-20",
+      "nombre": "Assault",
+      "precio": 48.53,
+      "urlImagen":"/imgSkins/Rifles/Assault.png"
+    },
+    {
+      "id": 73,
+      "categoria": "Rifles",
+      "arma": "SCAR-20",
+      "nombre": "Enforcer",
+      "precio": 141.18,
+      "urlImagen":"/imgSkins/Rifles/Enforcer.png"
+    },
+    {
+      "id": 74,
+      "categoria": "Rifles",
+      "arma": "SCAR-20",
+      "nombre": "Emerald",
+      "precio": 73317.06,
+      "urlImagen":"/imgSkins/Rifles/Emerald.png"
+    },
+    {
+      "id": 75,
+      "categoria": "Rifles",
+      "arma": "G3SG1",
+      "nombre": "Ventilator",
+      "precio": 39.13,
+      "urlImagen":"/imgSkins/Rifles/Ventilator.png"
+    },
+    {
+      "id": 77,
+      "categoria": "Rifles",
+      "arma": "G3SG1",
+      "nombre": "Scavenger",
+      "precio": 169.22,
+      "urlImagen":"/imgSkins/Rifles/Scavenger.png"
+    },
+    {
+      "id": 78,
+      "categoria": "Rifles",
+      "arma": "G3SG1",
+      "nombre": "Flux",
+      "precio": 2651.12,
+      "urlImagen":"/imgSkins/Rifles/Flux.png"
+    },
+    {
+      "id": 79,
+      "categoria": "Pistolas",
+      "arma": "Desert Eagle",
+      "nombre": "Trigger Discipline",
+      "precio": 139.32,
+      "urlImagen":"/imgSkins/Pistolas/TriggerDiscipline.png"
+    },
+    {
+      "id": 80,
+      "categoria": "Pistolas",
+      "arma": "Desert Eagle",
+      "nombre": "Mecha Industries",
+      "precio": 1462.73,
+      "urlImagen":"/imgSkins/Pistolas/MechaIndustries.png"
+    },
+    {
+      "id": 81,
+      "categoria": "Pistolas",
+      "arma": "Desert Eagle",
+      "nombre": "Code Red",
+      "precio": 9781.29,
+      "urlImagen":"/imgSkins/Pistolas/CodeRed.png"
+    },
+    {
+      "id": 82,
+      "categoria": "Pistolas",
+      "arma": "Desert Eagle",
+      "nombre": "Ocean Drive",
+      "precio": 8413.33,
+      "urlImagen":"/imgSkins/Pistolas/OceanDrive.png"
+    },
+    {
+      "id": 83,
+      "categoria": "Pistolas",
+      "arma": "USP-S",
+      "nombre": "Torque",
+      "precio": 258.92,
+      "urlImagen":"/imgSkins/Pistolas/Torque.png"
+    },
+    {
+      "id": 84,
+      "categoria": "Pistolas",
+      "arma": "USP-S",
+      "nombre": "Cyrex",
+      "precio": 435.18,
+      "urlImagen":"/imgSkins/Pistolas/Cyrex.png"
+    },
+    {
+      "id": 85,
+      "categoria": "Pistolas",
+      "arma": "USP-S",
+      "nombre": "Monster Mashup",
+      "precio": 7356.71,
+      "urlImagen":"/imgSkins/Pistolas/MonsterMashup.png"
+    },
+    {
+      "id": 86,
+      "categoria": "Pistolas",
+      "arma": "USP-S",
+      "nombre": "Royal Blue",
+      "precio": 3628.21,
+      "urlImagen":"/imgSkins/Pistolas/RoyalBlue.png"
+    },
+    {
+      "id": 87,
+      "categoria": "Pistolas",
+      "arma": "Glock-18",
+      "nombre": "Winterized",
+      "precio": 28.20,
+      "urlImagen":"/imgSkins/Pistolas/Winterized.png"
+    },
+    {
+      "id": 88,
+      "categoria": "Pistolas",
+      "arma": "Glock-18",
+      "nombre": "Bullet Queen",
+      "precio": 2859.67,
+      "urlImagen":"/imgSkins/Pistolas/BulletQueen.png"
+    },
+    {
+      "id": 89,
+      "categoria": "Pistolas",
+      "arma": "Glock-18",
+      "nombre": "Candy Apple",
+      "precio": 263.62,
+      "urlImagen":"/imgSkins/Pistolas/CandyApple.png"
+    },
+    {
+      "id": 90,
+      "categoria": "Pistolas",
+      "arma": "Glock-18",
+      "nombre": "Water Element",
+      "precio": 2005.25,
+      "urlImagen":"/imgSkins/Pistolas/WaterElement.png"
+    },
+    {
+      "id": 91,
+      "categoria": "Pistolas",
+      "arma": "Tec-9",
+      "nombre": "Decimator",
+      "precio": 3855.31,
+      "urlImagen":"/imgSkins/Pistolas/Decimator.png"
+    },
+    {
+      "id": 92,
+      "categoria": "Pistolas",
+      "arma": "Tec-9",
+      "nombre": "Isaac",
+      "precio": 835.83,
+      "urlImagen":"/imgSkins/Pistolas/Isaac.png"
+    },
+    {
+      "id": 93,
+      "categoria": "Pistolas",
+      "arma": "Tec-9",
+      "nombre": "Ice Cap",
+      "precio": 56.83,
+      "urlImagen":"/imgSkins/Pistolas/IceCap.png"
+    },
+    {
+      "id": 94,
+      "categoria": "Pistolas",
+      "arma": "Tec-9",
+      "nombre": "Red Quartz",
+      "precio": 64.36,
+      "urlImagen":"/imgSkins/Pistolas/RedQuartz.png"
+    },
+    {
+      "id": 95,
+      "categoria": "Cuchillos",
+      "arma": "Ursus Knife",
+      "nombre": "Ultraviolet",
+      "precio": 87582.47,
+      "urlImagen":"/imgSkins/Cuchillos/ursUltraviolet.png"
+    },
+    {
+      "id": 96,
+      "categoria": "Cuchillos",
+      "arma": "Flip Knife",
+      "nombre": "Ultraviolet",
+      "precio": 90523.72,
+      "urlImagen":"/imgSkins/Cuchillos/fliUltraviolet.png"
+    },
+    {
+      "id": 97,
+      "categoria": "Cuchillos",
+      "arma": "Ursus Knife",
+      "nombre": "Slaughter",
+      "precio": 172240.29,
+      "urlImagen":"/imgSkins/Cuchillos/ursSlaughter.png"
+    },
+    {
+      "id": 98,
+      "categoria": "Cuchillos",
+      "arma": "Stiletto Knife",
+      "nombre": "Crimson Web",
+      "precio": 172739.84,
+      "urlImagen":"/imgSkins/Cuchillos/stiCrimsonWeb.png"
+    },
+    {
+      "id": 99,
+      "categoria": "Cuchillos",
+      "arma": "Navaja Knife",
+      "nombre": "Boreal Forest",
+      "precio": 32968.98,
+      "urlImagen":"/imgSkins/Cuchillos/navBorealForest.png"
+    },
+    {
+      "id": 100,
+      "categoria": "Cuchillos",
+      "arma": "Gut Knife",
+      "nombre": "Crimson Web",
+      "precio": 54497.30,
+      "urlImagen":"/imgSkins/Cuchillos/gutCrimsonWeb.png"
+    },
+    {
+      "id": 101,
+      "categoria": "Cuchillos",
+      "arma": "Falchion Knife",
+      "nombre": "Autotronic",
+      "precio": 72031.43,
+      "urlImagen":"/imgSkins/Cuchillos/falAutotronic.png"
+    },
+    {
+      "id": 102,
+      "categoria": "Cuchillos",
+      "arma": "Skeleton Knife",
+      "nombre": "Case Hardened",
+      "precio": 256841.00,
+      "urlImagen":"/imgSkins/Cuchillos/skeCaseHardened.png"
+    },
+    {
+      "id": 103,
+      "categoria": "Cuchillos",
+      "arma": "Bayonet",
+      "nombre": "Autotronic",
+      "precio": 265539.90,
+      "urlImagen":"/imgSkins/Cuchillos/bayAutotronic.png"
+    },
+    {
+      "id": 104,
+      "categoria": "Subfusiles",
+      "arma": "MP9",
+      "nombre": "Goo",
+      "precio": 145.36,
+      "urlImagen":"/imgSkins/Subfusiles/Goo.png"
+    },
+    {
+      "id": 105,
+      "categoria": "Subfusiles",
+      "arma": "MP9",
+      "nombre": "Ruby Poison Dart",
+      "precio": 273.99,
+      "urlImagen":"/imgSkins/Subfusiles/RubyPoisonDart.png"
+    },
+    {
+      "id": 106,
+      "categoria": "Subfusiles",
+      "arma": "MP9",
+      "nombre": "Mount Fuji",
+      "precio": 513.60,
+      "urlImagen":"/imgSkins/Subfusiles/MountFuji.png"
+    },
+    {
+      "id": 107,
+      "categoria": "Subfusiles",
+      "arma": "MP9",
+      "nombre": "Starlight Protector",
+      "precio": 1723.04,
+      "urlImagen":"/imgSkins/Subfusiles/StarlightProtector.png"
+    },
+    {
+      "id": 108,
+      "categoria": "Subfusiles",
+      "arma": "MAC-10",
+      "nombre": "Stalker",
+      "precio": 4850.33,
+      "urlImagen":"/imgSkins/Subfusiles/Stalker.png"
+    },
+    {
+      "id": 109,
+      "categoria": "Subfusiles",
+      "arma": "MAC-10",
+      "nombre": "Neon Rider",
+      "precio": 2269.20,
+      "urlImagen":"/imgSkins/Subfusiles/NeonRider.png"
+    },
+    {
+      "id": 110,
+      "categoria": "Subfusiles",
+      "arma": "MAC-10",
+      "nombre": "Malachite",
+      "precio": 413.56,
+      "urlImagen":"/imgSkins/Subfusiles/Malachite.png"
+    },
+    {
+      "id": 112,
+      "categoria": "Subfusiles",
+      "arma": "MAC-10",
+      "nombre": "Candy Apple",
+      "precio": 87.06,
+      "urlImagen":"/imgSkins/Subfusiles/CandyApple.png"
+    },
+    {
+      "id": 113,
+      "categoria": "Subfusiles",
+      "arma": "MAC-10",
+      "nombre": "Oceanic",
+      "precio": 33.12,
+      "urlImagen":"/imgSkins/Subfusiles/Oceanic.png"
+    },
+    {
+      "id": 114,
+      "categoria": "Subfusiles",
+      "arma": "UMP-45",
+      "nombre": "Briefing",
+      "precio": 36.40,
+      "urlImagen":"/imgSkins/Subfusiles/Briefing.png"
+    },
+    {
+      "id": 115,
+      "categoria": "Subfusiles",
+      "arma": "UMP-45",
+      "nombre": "Scaffold",
+      "precio": 360.47,
+      "urlImagen":"/imgSkins/Subfusiles/Scaffold.png"
+    },
+    {
+      "id": 116,
+      "categoria": "Subfusiles",
+      "arma": "UMP-45",
+      "nombre": "Momentum",
+      "precio": 1316.43,
+      "urlImagen":"/imgSkins/Subfusiles/Momentum.png"
+    },
+    {
+      "id": 117,
+      "categoria": "Subfusiles",
+      "arma": "MP7",
+      "nombre": "Urban Hazard",
+      "precio": 30.28,
+      "urlImagen":"/imgSkins/Subfusiles/UrbanHazard.png"
+    },
+    {
+      "id": 118,
+      "categoria": "Subfusiles",
+      "arma": "MP7",
+      "nombre": "Bloodsport",
+      "precio": 535.45,
+      "urlImagen":"/imgSkins/Subfusiles/Bloodsport.png"
+    },
+    {
+      "id": 119,
+      "categoria": "Subfusiles",
+      "arma": "MP7",
+      "nombre": "Fade",
+      "precio": 2265.09,
+      "urlImagen":"/imgSkins/Subfusiles/Fade.png"
+    },
+    {
+      "id": 120,
+      "categoria": "Pesadas",
+      "arma": "Recortada",
+      "nombre": "Wasteland Princess",
+      "precio": 618.21,
+      "urlImagen":"/imgSkins/Pesadas/WastelandPrincess.png"
+    },
+    {
+      "id": 121,
+      "categoria": "Pesadas",
+      "arma": "Recortada",
+      "nombre": "Origami",
+      "precio": 29.51,
+      "urlImagen":"/imgSkins/Pesadas/Origami.png"
+    },
+    {
+      "id": 122,
+      "categoria": "Cuchillos",
+      "arma": "Shadow Daggers",
+      "nombre": "Lore",
+      "precio": 71929.94,
+      "urlImagen":"/imgSkins/Cuchillos/sdLore.png"
+    },
+    {
+      "id": 123,
+      "categoria": "Pesadas",
+      "arma": "M249",
+      "nombre": "System Lock",
+      "precio": 0,
+      "urlImagen":"/imgSkins/Pesadas/SystemLock.png"
+    },
+    {
+      "id": 124,
+      "categoria": "Pesadas",
+      "arma": "M249",
+      "nombre": "Downtown",
+      "precio": 239.93,
+      "urlImagen":"/imgSkins/Pesadas/Downtown.png"
+    },
+    {
+      "id": 125,
+      "categoria": "Pesadas",
+      "arma": "Negev",
+      "nombre": "Bulkhead",
+      "precio": 25.67,
+      "urlImagen":"/imgSkins/Pesadas/Bulkhead.png"
+    },
+    {
+      "id": 126,
+      "categoria": "Pesadas",
+      "arma": "Negev",
+      "nombre": "Ultralight",
+      "precio": 19.90,
+      "urlImagen":"/imgSkins/Pesadas/Ultralight.png"
+    },
+    {
+      "id": 127,
+      "categoria": "Pesadas",
+      "arma": "Negev",
+      "nombre": "Infrastructure",
+      "precio": 3703.00,
+      "urlImagen":"/imgSkins/Pesadas/Infrastructure.png"
+    },
+    {
+      "id": 128,
+      "categoria": "Cuchillos",
+      "arma": "Shadow Daggers",
+      "nombre": "Urban Masked",
+      "precio": 35619.68,
+      "urlImagen":"/imgSkins/Cuchillos/sdUrbanMasked.png"
     }
   ]

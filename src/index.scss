@@ -38,24 +38,43 @@ html, body, #root {
     border-radius: 25%;
 }
 
-.header {
-    flex: 0 0 auto;
-    background-color: map-get($colores,storm3);
-}
-.ilm {
+.headerLight {
     flex: 0 0 auto;
     background-color: map-get($colores,storm2);
 }
-.main {
+
+.headerDark {
+    flex: 0 0 auto;
+    background-color: map-get($colores,storm4);
+    color: white;
+}
+
+.mainLight {
     padding: 20px;
     flex: 1;
-    background-color: map-get($colores,storm2);
+    background-color: map-get($colores,storm1);
 }
-.footer {
+
+.mainDark {
+    padding: 20px;
+    flex: 1;
+    color: map-get($colores,tonoBlanco1);
+    background-color: map-get($colores,storm5);
+}
+
+.footerLight {
     flex: 0 0 auto;
-    color: white;
-    background-color: map-get($colores,storm4);
     justify-content: center;
+    background-color: map-get($colores,celesteArg);
+
+}
+
+.footerDark {
+    flex: 0 0 auto;
+    justify-content: center;
+    color: map-get($colores,tonoBlanco1);
+    background-color: map-get($colores,storm4);
+
 }
 
 .active {
@@ -91,17 +110,30 @@ html, body, #root {
     background-color: map-get($colores,storm2);
 }
 
-.carrito {
+.carritoLight {
     padding: 5px;
     background-color: map-get($colores,storm1);
     border-radius: 50%;
 }
-
-.tarjeta {
-background-color: map-get($colores,storm3);
+.carritoDark {
+    padding: 5px;
+    background-color: map-get($colores,storm2);
+    color: black;
+    border-radius: 50%;
 }
 
-.categoriaTarjeta {
+.tarjetaLight {
+background-color: map-get($colores,storm2);
+}
+
+.tarjetaDark {
+    background-color: map-get($colores,storm3);
+    }
+
+.catTarLight {
+    color: map-get($colores,storm5);
+}
+.catTarDark {
     color: map-get($colores,storm1);
 }
 
@@ -119,8 +151,7 @@ background-color: map-get($colores,storm3);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: map-get($colores,tonoBlanco1);
-    background-color: map-get($colores,storm5);
+    background-color: map-get($colores,celesteArg);
 }
 .itemCountButton {
     font-weight: 800;
