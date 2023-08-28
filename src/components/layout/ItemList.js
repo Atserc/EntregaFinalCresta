@@ -23,12 +23,12 @@ function ItemList(props) {
                         <img className="mx-auto mt-8" src={item.urlImagen} alt={item.nombre} width={200}/>
                         </div>
                         <div className="col-span-3">
-                            <p className={valorDelContexto.dark ? 'catTarLight' : 'catTarLight' }>{item.categoria}</p>
+                            <p className={valorDelContexto.dark ? 'catTarDark' : 'catTarLight' }>{item.categoria}</p>
                             <h2 >{item.arma} | {item.nombre}</h2>
                             <h3 >${item.precio.toLocaleString('es-AR', estiloNumero)}</h3>
                         </div>
                         <div className="col-span-3">
-                            <Link to={`/${item.categoria}/${item.id}`}><button className='botonDetalles text-right'>Comprar</button></Link>
+                            <Link to={`/${item.categoria}/${item.id}`}><button className='botDet text-right'>Detalles</button></Link>
                         </div>
                     </article>
                 )

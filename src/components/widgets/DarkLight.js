@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import sol from "../../images/icons/sun.svg"
 import luna from "../../images/icons/moon.svg"
 import { contexto } from "../Context";

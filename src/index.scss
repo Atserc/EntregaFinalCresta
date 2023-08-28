@@ -127,7 +127,7 @@ background-color: map-get($colores,storm2);
 }
 
 .tarjetaDark {
-    background-color: map-get($colores,storm3);
+    background-color: map-get($colores,storm4);
     }
 
 .catTarLight {
@@ -142,9 +142,15 @@ background-color: map-get($colores,storm2);
     unicode-bidi: bidi-override;
 }
 
-.botonDetalles {
+.botDet {
     margin-left: auto; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10%;
     display: block;
+    background-color: map-get($colores,storm3);
 }
 
 .itemCount {
