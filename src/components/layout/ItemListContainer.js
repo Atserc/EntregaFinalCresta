@@ -1,25 +1,51 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 import LoadingSpinner from '../widgets/LoadingSpinner';
+import { db } from "../../db/firebase";
+import { getDocs , collection } from "firebase/firestore";
 
 function getAllProducts(setData,setLoading){
-  fetch('../products.json')
-    .then(res=>res.json())
-    .then(json=>setData(json))
-    .catch(err => console.log(err))
-    .finally(setLoading(false))
-  }
+  
+  const prodCollection = collection(db, "productos")
+  const consultaProductos = getDocs(prodCollection)
+
+  consultaProductos
+    .then((resultado) => {
+      const arrayData = []
+      resultado.docs.forEach((prod)=>{
+        arrayData.push(prod.data())
+        })
+      setData(arrayData)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+    .finally(() => {
+      setLoading(false)
+    })
+}
 
 function getProductByCategory(setData,cat,setLoading){
-  fetch('../products.json')
-    .then(res => res.json())
-    .then(json => {
-      const productosFiltrados = json.filter(producto => producto.categoria === cat);
+  
+  const prodCollection = collection(db, "productos")
+  const consultaProductos = getDocs(prodCollection)
+
+  consultaProductos
+    .then((resultado) => {
+      const arrayData = []
+      resultado.docs.forEach((prod)=>{
+        arrayData.push(prod.data())
+        })
+      const productosFiltrados = arrayData.filter(producto => producto.categoria === cat);
       setData(productosFiltrados);
     })
-    .catch(err => console.log(err))
-    .finally(setLoading(false))
+    .catch( (err) => {
+        console.log(err);
+    })
+    .finally(() => {
+      setLoading(false)
+    })
 }
 
 function ItemListContainer() {
