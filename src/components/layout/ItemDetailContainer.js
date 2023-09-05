@@ -2,16 +2,21 @@ import { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail';
 import { useParams } from "react-router-dom"
 import LoadingSpinner from '../widgets/LoadingSpinner';
+import { getDoc, doc } from 'firebase/firestore';
+import { db } from '../../db/firebase';
 
-function getProduct(setProd,id,setLoading){
-  fetch('../products.json')
-    .then(res => res.json())
-    .then(json => {
-      const prod = json.find((prod) => prod.id === id);
-      setProd(prod);
-  })
-  .catch(err => console.log(err))
-  .finally(setLoading(false))
+async function getProduct(setProd,id,setLoading) {
+  const docRef = doc(db, "productos", id);
+  try {
+    const docTraido = await getDoc(docRef);
+    const prod = docTraido.data();
+    setProd(prod)
+    console.log(prod);
+  } catch (error) {
+    console.log(error)
+  } finally {
+    setLoading(false)
+  }
 }
 
 function ItemDetailContainer() {
@@ -21,7 +26,7 @@ function ItemDetailContainer() {
 
   const { id } = useParams()
   useEffect(()=>{
-      getProduct(setProd,parseInt(id),setLoading)
+      getProduct(setProd,id,setLoading)
   },[id])
 
   return (

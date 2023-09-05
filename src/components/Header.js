@@ -7,7 +7,6 @@ import { contexto } from "./Context";
 function Header() {
 
     const valorDelContexto = useContext(contexto)
-    const nombre = "vacio"
 
     return (
         <header id="header" className={valorDelContexto.dark ? "headerDark flex justify-between items-center ": "headerLight flex justify-between items-center"}>

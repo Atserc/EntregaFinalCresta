@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import LoadingSpinner from '../widgets/LoadingSpinner';
 import { db } from "../../db/firebase";
 import { getDocs , collection } from "firebase/firestore";
+import { query, where } from 'firebase/firestore';
 
 function getAllProducts(setData,setLoading){
   
@@ -12,11 +13,14 @@ function getAllProducts(setData,setLoading){
 
   consultaProductos
     .then((resultado) => {
-      const arrayData = []
-      resultado.docs.forEach((prod)=>{
-        arrayData.push(prod.data())
-        })
-      setData(arrayData)
+      const aux = resultado.docs.map((doc) => {
+        const producto = {
+          id : doc.id,
+          ...doc.data()
+        }
+        return producto
+      })
+      setData(aux);
     })
     .catch((err) => {
       console.log(err)
@@ -29,23 +33,26 @@ function getAllProducts(setData,setLoading){
 function getProductByCategory(setData,cat,setLoading){
   
   const prodCollection = collection(db, "productos")
-  const consultaProductos = getDocs(prodCollection)
+  const filtroConsulta = query(prodCollection, where("categoria","==",cat))
+  const consultaProductosFiltrados = getDocs(filtroConsulta)
 
-  consultaProductos
-    .then((resultado) => {
-      const arrayData = []
-      resultado.docs.forEach((prod)=>{
-        arrayData.push(prod.data())
-        })
-      const productosFiltrados = arrayData.filter(producto => producto.categoria === cat);
-      setData(productosFiltrados);
+  consultaProductosFiltrados
+  .then((resultado) => {
+    const aux = resultado.docs.map((doc) => {
+      const producto = {
+        id : doc.id,
+        ...doc.data()
+      }
+      return producto
     })
-    .catch( (err) => {
-        console.log(err);
-    })
-    .finally(() => {
-      setLoading(false)
-    })
+    setData(aux);
+  })
+  .catch((err) => {
+    console.log(err)
+  })
+  .finally(() => {
+    setLoading(false)
+  })
 }
 
 function ItemListContainer() {
@@ -67,7 +74,6 @@ function ItemListContainer() {
       {loading ? <LoadingSpinner /> : <ItemList data={data} />}
     </>
   )
-  
 }
 
 export default ItemListContainer

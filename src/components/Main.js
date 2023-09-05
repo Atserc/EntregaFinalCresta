@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Home from "./layout/Home";
 import ItemListContainer from "./layout/ItemListContainer";
 import ItemDetailContainer from "./layout/ItemDetailContainer";
 import CartContainer from "./layout/CartContainer";
@@ -12,7 +13,7 @@ function Main(){
     return (
         <main id="main" className={valorDelContexto.dark ? "mainDark px-2 py-2 darkMode": "mainLight px-2 py-2"}>
             <Routes>
-                <Route path="/" element={<ItemListContainer />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/Productos" element={<ItemListContainer />} />
                 <Route path="/:categoria" element={<ItemListContainer />} />
                 <Route path="/:categoria/:id" element={<ItemDetailContainer />} />
