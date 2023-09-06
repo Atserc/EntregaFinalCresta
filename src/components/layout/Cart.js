@@ -1,6 +1,11 @@
+import Formulario from "../widgets/Formulario"
+
 function Cart() {
   return (
-    <div>Cart</div>
+    <div>
+      <p>Lista carrito</p>
+      <Formulario />
+    </div>
   )
 }
 export default Cart

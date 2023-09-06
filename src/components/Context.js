@@ -5,23 +5,29 @@ const Provider = contexto.Provider
 
 const CustomProvider = (props) => {
 
-    const [darkMode, setDarkMode] = useState(false);
-    const [nombre, setNombre] = useState("vacio");
+    const [darkMode, setDarkMode] = useState(false)
+    const [nom, setNom] = useState("")
+    const [monTotal, setMontoTotal] = useState(0)
+    const [cantTotal, setCantidadTotal] = useState(0)
+
+    const agregarAlCarrito = () => {
+
+    }
 
     const valorDelContexto = {
         carrito : [],
-        montoTotal : 0,
-        cantidadTotal : 0,
+        montoTotal : monTotal,
+        cantidadTotal : cantTotal,
         dark: darkMode,
         setDarkMode: setDarkMode,
-        nom: nombre,
-        setNombre: setNombre
+        nombre: nom,
+        setNombre: setNom
     }
 
     return (
         <Provider value={valorDelContexto}>
             {props.children}
         </Provider>
-  )
+    )
 }
 export default CustomProvider
