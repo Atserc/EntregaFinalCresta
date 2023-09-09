@@ -1,7 +1,14 @@
 import React, { useState } from 'react'
+import minus from "../../images/icons/minus.svg"
+import plus from "../../images/icons/plus.svg"
+import { useContext } from "react"
+import { contexto } from "../Context";
+import { Toaster, toast } from 'sonner'
 
-function ItemCount({stock,inicial,onAdd}) {
-
+function ItemCount({stock,inicial,idProd,prod}) {
+    
+    const padding = 'px-2'
+    const valorDelContexto = useContext(contexto)
     const [contador,setContador] = useState(inicial)
 
     const aumentarContador = () => {
@@ -16,12 +23,57 @@ function ItemCount({stock,inicial,onAdd}) {
         }
     }
 
+    const handleClick = () => {
+        const carritoActual = valorDelContexto.carrito
+        const productoExistente = carritoActual.find((item) => item.id === idProd)
+    
+        if (productoExistente) {
+            const cantidadNueva = productoExistente.cant + contador
+            
+            if (cantidadNueva <= stock) {
+                const carritoActualizado = carritoActual.map((item) => {
+                    if (item.id === idProd) {
+                        return { ...item, cant: cantidadNueva }
+                    }
+                    return item
+                });
+                
+                valorDelContexto.setCarrito(carritoActualizado)
+                valorDelContexto.setCantidadTotal(valorDelContexto.cantidadTotal + contador)
+                setContador(0);
+                toast.success('Producto ya en carrito, cantidad agregada')
+            } else {
+                toast.error('No se puede agregar más del stock disponible')
+            }
+        } else {
+            const nuevoItem = { id: idProd, producto: prod, cant: contador }
+            const cantidadTotalNueva = valorDelContexto.cantidadTotal + contador
+            
+            if (cantidadTotalNueva <= stock) {
+                const nuevoCarrito = [...carritoActual, nuevoItem]
+                valorDelContexto.setCarrito(nuevoCarrito)
+                valorDelContexto.setCantidadTotal(cantidadTotalNueva)
+                setContador(0)
+                toast.success('Producto Agregado')
+            } else {
+                toast.error('No se puede agregar más del stock disponible')
+            }
+        }
+    }
+
   return (
-    <div className='itemCount py-1 my-2 mx-2'>
-        <button className='first-letter:px-2 itemCountButton' onClick={disminuirContador}>-</button>
-        <p className='px-2 '>{contador}</p>
-        <button className='px-2 itemCountButton' onClick={aumentarContador}>+</button>
-        <button className='px-2' onClick={onAdd}> Agregar al carrito </button>
+      <div className='itemCount px-3 py-1 my-2 mx-2'>
+        <Toaster />
+        <div className='flex justify-center'>
+                <button>
+                    <img src={minus} className='px-2' onClick={disminuirContador} alt="restar svg"/>
+                </button>
+                <p className='px-2 '>{contador}</p>
+                <button>
+                    <img src={plus} className='px-2' onClick={aumentarContador} alt="sumar svg"/>
+                </button>
+            </div>
+            <button className={padding} onClick={handleClick}> Agregar al carrito </button>
     </div>
   )
 }

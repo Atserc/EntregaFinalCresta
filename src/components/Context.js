@@ -6,22 +6,22 @@ const Provider = contexto.Provider
 const CustomProvider = (props) => {
 
     const [darkMode, setDarkMode] = useState(false)
-    const [nom, setNom] = useState("")
+    const [carrito, setCarrito] = useState([])
     const [monTotal, setMontoTotal] = useState(0)
     const [cantTotal, setCantidadTotal] = useState(0)
-
-    const agregarAlCarrito = () => {
-
-    }
+    const [ultimaVenta, setUltimaVenta] = useState("")
 
     const valorDelContexto = {
-        carrito : [],
-        montoTotal : monTotal,
-        cantidadTotal : cantTotal,
         dark: darkMode,
         setDarkMode: setDarkMode,
-        nombre: nom,
-        setNombre: setNom
+        carrito : carrito,
+        setCarrito : setCarrito,
+        montoTotal : monTotal,
+        setMontoTotal : setMontoTotal,
+        cantidadTotal : cantTotal,
+        setCantidadTotal : setCantidadTotal,
+        ultimaVenta : ultimaVenta,
+        setUltimaVenta : setUltimaVenta,
     }
 
     return (

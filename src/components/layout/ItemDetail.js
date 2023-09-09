@@ -1,28 +1,23 @@
 import ItemCount from "../widgets/ItemCount";
 
 function ItemDetail(props) {
-    
+    const id = props.id
     const item = props.prod
     const precioLocal = parseInt(item.precio).toLocaleString('es-AR')
     const padding = "p-4"
 
-    const onAdd = () => {
-      /*setProducts([
-          ...products,
-          { agregar producto }
-      ])*/
-      console.log("Producto Agregado");
-    }
-
     return (
-        <section className="grid grid-cols-2 justify-items-center">
-            <img src={item.urlImagen} alt={item.nombre}/>
-            <div className={padding}>
-                <p className={padding}> {item.categoria}</p>
-                <h2 className={padding}> {item.arma} | {item.nombre}</h2>
-                <h3 className={padding}> Stock : {item.stock}</h3>
-                <h3 className={padding}> ${precioLocal}</h3>
-                <ItemCount stock={item.stock} inicial={1} onAdd={onAdd()}/>
+        <section>
+            <h2 className="text-center tituloImpact">{item.nombre}</h2>
+            <div className="grid grid-cols-2 justify-items-center">
+                <img src={item.urlImagen} alt={item.nombre}/>
+                <div className={padding}>
+                    <h2 className={padding}> Arma: {item.arma}</h2>
+                    <h2 className={padding}> Categoría: {item.categoria}</h2>
+                    <h3 className={padding}> Stock : {item.stock}</h3>
+                    <h3 className={padding}> Precio: ${precioLocal}</h3>
+                    <ItemCount stock={item.stock} inicial={1} idProd={id} prod={item} />
+                </div>
             </div>
         </section>
     )

@@ -1,8 +1,9 @@
-
+import { useContext } from "react"
+import { contexto } from "../Context";
 
 function Checkout() {
-
-  const idCompra = "asfdaf13r531gaedg8da9fg"
+  const valorDelContexto = useContext(contexto)
+  const idCompra = valorDelContexto.ultimaVenta
 
   return (
     <div className="flex justify-center p-8">

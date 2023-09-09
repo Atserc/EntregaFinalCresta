@@ -11,7 +11,6 @@ async function getProduct(setProd,id,setLoading) {
     const docTraido = await getDoc(docRef);
     const prod = docTraido.data();
     setProd(prod)
-    console.log(prod);
   } catch (error) {
     console.log(error)
   } finally {
@@ -31,7 +30,7 @@ function ItemDetailContainer() {
 
   return (
     <>
-      {loading ? <LoadingSpinner /> : <ItemDetail prod={prod} />}
+      {loading ? <LoadingSpinner /> : <ItemDetail prod={prod} id={id} />}
     </>
     
   )

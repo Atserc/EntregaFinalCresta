@@ -154,15 +154,17 @@ background-color: map-get($colores,storm2);
 }
 
 .itemCount {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: black;
     background-color: map-get($colores,celesteArg);
+    border-radius: 10%;
 }
-.itemCountButton {
-    font-weight: 800;
-}
+
 .tituloImpact {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: x-large;
+}
+
+.tablaDark{
+    background-color: map-get($colores,storm4);
+    border-radius: 5%;
 }
