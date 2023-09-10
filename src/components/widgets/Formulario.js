@@ -1,94 +1,101 @@
-/*
-import { useContext, useState } from "react"
-import Swal from 'sweetalert2';
+import { useState } from "react";
+import { useContext } from "react"
 import { contexto } from "../Context";
+import Swal from "sweetalert2";
 import { db } from "../../db/firebase";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { doc, getDoc, updateDoc, addDoc, collection, serverTimestamp } from "firebase/firestore";
 
+function Formulario({carrito}) {
 
- function realizarVenta(formComprador,productos) {
-  const ventasCollection = collection(db, "ventas")
-  const venta = {
-    comprador : {
-      nombre: formComprador.nombre,
-      idSteam: formComprador.idSteam,
-      email: formComprador.email,
-      telefono: formComprador.telefono 
-    },
-    fecha : serverTimestamp(),
-    productos : productos
-  }
-  const ventaHecha = addDoc(ventasCollection,venta)
-  ventaHecha
-    .then((res)=>{
-
-    })
-    .catch((err)=>{
-      Swal.fire('Algo salio mal.', '', 'error')
-    })
-}
-*/
-function Formulario(props) {
-
-  /*const productos = props.prods
   const valorDelContexto = useContext(contexto)
 
-  const [formComprador, setFormComprador] = useState({
-    nombre: "",
-    idSteam: "",
-    email: "",
-    telefono: 0
-  });
+  const [nombre, setNombre] = useState("")
+  const [idSteam, setIdSteam] = useState("")
+  const [email, setEmail] = useState("")
+  const [telefono, setTelefono] = useState("")
+  
+  const realizarVenta = (nombre,idSteam,email,telefono,productos) => {   
+    const ventasCollection = collection(db, "ventas")
+    const venta = {
+      comprador : {
+      nombre: nombre,
+      idSteam: idSteam,
+      email: email,
+      telefono: telefono 
+      },
+      fecha : serverTimestamp(),
+      productos : productos
+    }
+    const ventaHecha = addDoc(ventasCollection,venta)
+    ventaHecha
+      .then((res)=>{
+        valorDelContexto.setCarrito([])
+        valorDelContexto.setCantidadTotal(0)
+        Swal.fire('Compra realizada!', '', 'success')
+        Swal.fire(
+          'Compra realizada!',
+          `Su id de compra es ${res.id}`,
+          'success'
+        )
+      })
+    .catch(()=>{
+      Swal.fire('Algo salio mal al agregar su producto.', '', 'error')
+    })
 
-  const handleChange = (e) => {
-    setFormComprador({
-      ...formComprador,
-      [e.target.id]: e.target.value
-    });
+    productos.forEach(async item => {
+      const prodRef = doc(db, 'productos', item.id);
+  
+      try {
+        const docSnapshot = await getDoc(prodRef);
+        const itemActual = docSnapshot.data();
+        const stockComprado = item.cant;
+        const stockActual = itemActual.stock;
+        const nuevoStock = stockActual - stockComprado;
+        itemActual.stock = nuevoStock;
+        await updateDoc(prodRef, itemActual);
+      } catch (error) {
+        console.error(`Error al actualizar el stock para el producto con ID ${item.id}:`, error);
+      }
+    })
   }
 
-  const handleClick = () => {
+  const handleSubmit = (nom,idS,email,tel,productos) => {
+    setNombre(nom)
+    setIdSteam(idS)
+    setEmail(email)
+    setTelefono(tel)
     Swal.fire({
       title: 'Desea confirmar su compra?',
       showCancelButton: true,
       confirmButtonText: 'Confirmar Compra',
     }).then((result) => {
-      if (result.isConfirmed) {
+      if (result.isConfirmed && productos.length > 0) {
         
-        realizarVenta(formComprador,productos)
+        realizarVenta(nom,idS,email,tel,productos)
 
-        vaciar carrito
-        Swal.fire('Compra realizada!', '', 'success').then(() => {
-          window.location.href = '/Checkout';
-        })
-
+      } else if (productos.length === 0) {
+        Swal.fire('Su carrito está vacío.', '', 'error');
       } else {
-        Swal.fire('Algo salio mal.', '', 'error')
+        Swal.fire('Compra cancelada.', '', 'error');
       }
     })
-  } */
+  }
 
   return (
-    <div className="my-5 text-center">
-      <p>Formulario</p>
-    </div>
-    )
-  }
-  
-  export default Formulario
-
-  /* <form>
-    <label htmlFor="nombre">Nombre:</label>
-    <input id="nombre" required type="text" value={formComprador.nombre} onChange={handleChange} />
-
-    <label htmlFor="IdSteam">ID de Steam:</label>
-    <input id="IdSteam" required type="text" value={formComprador.idSteam} onChange={handleChange} />
-
-    <label htmlFor="email">Email:</label>
-    <input id="email" required type="email" value={formComprador.email} onChange={handleChange} />
-
-    <label htmlFor="telefono">Telefono: *Opcional</label>
-    <input id="telefono" type="tel" value={formComprador.telefono} onChange={handleChange} />
-    
-    <button className='px-2' onClick={handleClick}>Realizar compra</button>
-  </form> */
+    <form className={valorDelContexto.cantidadTotal === 0 ? "hidden" : "my-5 text-center" } onSubmit={ev => {
+      ev.preventDefault()
+      handleSubmit(ev.target.nombre.value, ev.target.IDSteam.value, ev.target.email.value, ev.target.telefono.value, carrito)
+    }}>
+      <label htmlFor="nombre">Nombre:</label>
+      <input required type="text" name="nombre" className="mx-2"></input>
+      <label htmlFor="IDSteam">ID Steam:</label>
+      <input required type="text" name="IDSteam"className="mx-2"></input>
+      <label htmlFor="email">Email:</label>
+      <input required type="text" name="email"className="mx-2"></input>
+      <label htmlFor="telefono">Telefono:</label>
+      <input type="text" name="telefono"className="mx-2"></input>
+      <button type="submit">Comprar</button>
+    </form>
+  )
+}
+export default Formulario

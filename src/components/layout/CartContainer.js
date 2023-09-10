@@ -5,7 +5,6 @@ import { contexto } from "../Context";
 import { Toaster, toast } from "sonner";
 import Formulario from "../widgets/Formulario";
 
-
 function CartContainer() {
   
   const valorDelContexto = useContext(contexto)
@@ -37,7 +36,7 @@ function CartContainer() {
     <>
       <Toaster />
       <Cart carrito = {carro} vaciarCarrito={vaciarCarrito} eliminarProducto={eliminarProducto} />
-      <Formulario />
+      <Formulario carrito = {carro}/>
     </>
   )
 }

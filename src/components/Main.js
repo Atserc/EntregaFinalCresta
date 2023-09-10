@@ -3,7 +3,6 @@ import HomeContainer from "./layout/HomeContainer";
 import ItemListContainer from "./layout/ItemListContainer";
 import ItemDetailContainer from "./layout/ItemDetailContainer";
 import CartContainer from "./layout/CartContainer";
-import CheckoutContainer from "./layout/CheckoutContainer";
 import { useContext } from "react"
 import { contexto } from "./Context";
 
@@ -19,7 +18,6 @@ function Main(){
                 <Route path="/:categoria" element={<ItemListContainer />} />
                 <Route path="/:categoria/:id" element={<ItemDetailContainer />} />
                 <Route path="/Carrito" element={<CartContainer />} />
-                <Route path="/Checkout" element={<CheckoutContainer />} />
                 <Route path="*" element={<p>404: Ruta incorrecta</p>} />
             </Routes>
         </main>

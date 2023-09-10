@@ -9,7 +9,6 @@ const CustomProvider = (props) => {
     const [carrito, setCarrito] = useState([])
     const [monTotal, setMontoTotal] = useState(0)
     const [cantTotal, setCantidadTotal] = useState(0)
-    const [ultimaVenta, setUltimaVenta] = useState("")
 
     const valorDelContexto = {
         dark: darkMode,
@@ -20,8 +19,6 @@ const CustomProvider = (props) => {
         setMontoTotal : setMontoTotal,
         cantidadTotal : cantTotal,
         setCantidadTotal : setCantidadTotal,
-        ultimaVenta : ultimaVenta,
-        setUltimaVenta : setUltimaVenta,
     }
 
     return (
