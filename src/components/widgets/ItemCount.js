@@ -49,7 +49,7 @@ function ItemCount({stock,inicial,idProd,prod}) {
             const nuevoItem = { id: idProd, producto: prod, cant: contador }
             const cantidadTotalNueva = valorDelContexto.cantidadTotal + contador
             
-            if (cantidadTotalNueva <= stock) {
+            if (contador <= stock) {
                 const nuevoCarrito = [...carritoActual, nuevoItem]
                 valorDelContexto.setCarrito(nuevoCarrito)
                 valorDelContexto.setCantidadTotal(cantidadTotalNueva)

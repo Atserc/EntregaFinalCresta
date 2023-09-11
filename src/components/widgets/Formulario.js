@@ -82,20 +82,43 @@ function Formulario({carrito}) {
   }
 
   return (
-    <form className={valorDelContexto.cantidadTotal === 0 ? "hidden" : "my-5 text-center" } onSubmit={ev => {
-      ev.preventDefault()
-      handleSubmit(ev.target.nombre.value, ev.target.IDSteam.value, ev.target.email.value, ev.target.telefono.value, carrito)
-    }}>
-      <label htmlFor="nombre">Nombre:</label>
-      <input required type="text" name="nombre" className="mx-2"></input>
-      <label htmlFor="IDSteam">ID Steam:</label>
-      <input required type="text" name="IDSteam"className="mx-2"></input>
-      <label htmlFor="email">Email:</label>
-      <input required type="text" name="email"className="mx-2"></input>
-      <label htmlFor="telefono">Telefono:</label>
-      <input type="text" name="telefono"className="mx-2"></input>
-      <button type="submit">Comprar</button>
-    </form>
+    <form
+  className={
+    valorDelContexto.cantidadTotal === 0 ? "hidden" : "grid grid-cols-4 gap-2 my-2 text-center "
+  }
+  onSubmit={(ev) => {
+    ev.preventDefault();
+    handleSubmit(
+      ev.target.nombre.value,
+      ev.target.IDSteam.value,
+      ev.target.email.value,
+      ev.target.telefono.value,
+      carrito
+    );
+  }}
+>
+  <div className="flex items-center justify-center space-x-2 my-2">
+    <label htmlFor="nombre">Nombre:</label>
+    <input required type="text" name="nombre" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
+  </div>
+  <div className="flex items-center justify-center space-x-2 my-2">
+    <label htmlFor="IDSteam">ID Steam:</label>
+    <input required type="text" name="IDSteam" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
+  </div>
+  <div className="flex items-center justify-center space-x-2 my-2">
+    <label htmlFor="email">Email:</label>
+    <input required type="text" name="email" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
+  </div>
+  <div className="flex items-center justify-center space-x-2 my-2">
+    <label htmlFor="telefono">Telefono:</label>
+    <input type="text" name="telefono" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
+  </div>
+  <div className="col-span-4 flex justify-center">
+    <button type="submit" className="ov-btn-slide-right my-2">
+      Comprar
+    </button>
+  </div>
+</form>
   )
 }
 export default Formulario
