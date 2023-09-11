@@ -23,6 +23,4 @@ Tecnologias usadas:
     *process.env.FIREBASE_KEY
     *process.env.FIREBASE_MESSAGINGSENDERID
     *process.env.FIREBASE_APPID
-    
-  Por sus propias keys de sus base de datos, o pedir las keys por github .
-  (https://github.com/Atserc)
+   por sus propias keys de sus base de datos, o pedir las keys al creador(https://github.com/Atserc).

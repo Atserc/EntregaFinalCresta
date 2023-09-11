@@ -62,18 +62,18 @@ function ItemCount({stock,inicial,idProd,prod}) {
     }
 
   return (
-      <div className='itemCount px-3 py-1 my-2 mx-2'>
+    <div className='itemCount px-3 py-1 my-2 mx-2 flex flex-col items-center justify-center'>
         <Toaster />
-        <div className='flex justify-center'>
-                <button>
-                    <img src={minus} className='px-2' onClick={disminuirContador} alt="restar svg"/>
-                </button>
-                <p className='px-2 '>{contador}</p>
-                <button>
-                    <img src={plus} className='px-2' onClick={aumentarContador} alt="sumar svg"/>
-                </button>
-            </div>
-            <button className={padding} onClick={handleClick}> Agregar al carrito </button>
+        <div className='flex items-center'>
+            <button>
+                <img src={minus} className='px-2' onClick={disminuirContador} alt="restar svg"/>
+            </button>
+            <p className='px-2'>{contador}</p>
+            <button>
+                <img src={plus} className='px-2' onClick={aumentarContador} alt="sumar svg"/>
+            </button>
+        </div>
+        <button className={padding} onClick={handleClick}> Agregar al carrito </button>
     </div>
   )
 }
