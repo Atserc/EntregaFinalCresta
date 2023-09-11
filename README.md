@@ -3,7 +3,7 @@
 Página que simula un e-commerce de skins del videojuego Counter-Strike: Global Ofensive, conectada a una base de datos donde se pueden guardar los pedidos de venta. Hecha como proyecto final del curso de React Js de CoderHouse, por Lisandro Cresta.
 
 Navegación:
-[Ver video de navegación](https://www.youtube.com/watch?v=Dj7mzNNlAy0)
+[Ver GIF de navegación](https://i.imgur.com/qh5OolK.gif)
 
 Versión de React: 18.2.0
 Tecnologias usadas:

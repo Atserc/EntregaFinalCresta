@@ -137,11 +137,6 @@ background-color: map-get($colores,storm2);
     color: map-get($colores,storm1);
 }
 
-.numero-formateado {
-    font-family: monospace;
-    unicode-bidi: bidi-override;
-}
-
 .botDet {
     margin-left: auto; 
     padding-left: 20px;

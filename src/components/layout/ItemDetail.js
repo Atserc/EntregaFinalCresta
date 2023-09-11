@@ -3,7 +3,12 @@ import ItemCount from "../widgets/ItemCount";
 function ItemDetail(props) {
     const id = props.id
     const item = props.prod
-    const precioLocal = parseInt(item.precio).toLocaleString('es-AR')
+    const estiloNumero = {
+        style: 'decimal',
+        maximumFractionDigits: 2,
+        minimumFractionDigits: 2
+      };
+    const precioLocal = item.precio.toLocaleString('es-AR', estiloNumero);
     const padding = "p-4"
 
     return (
