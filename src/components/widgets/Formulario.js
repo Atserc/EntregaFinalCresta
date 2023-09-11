@@ -84,7 +84,7 @@ function Formulario({carrito}) {
   return (
     <form
   className={
-    valorDelContexto.cantidadTotal === 0 ? "hidden" : "grid grid-cols-4 gap-2 my-2 text-center "
+    valorDelContexto.cantidadTotal === 0 ? "hidden" : "sm:grid sm:grid-cols-4 sm:gap-2 my-2 text-center "
   }
   onSubmit={(ev) => {
     ev.preventDefault();
@@ -97,19 +97,19 @@ function Formulario({carrito}) {
     );
   }}
 >
-  <div className="flex items-center justify-center space-x-2 my-2">
+  <div className="sm:flex sm:items-center sm:justify-center sm:space-x-2 my-2 mx-2">
     <label htmlFor="nombre">Nombre:</label>
     <input required type="text" name="nombre" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
   </div>
-  <div className="flex items-center justify-center space-x-2 my-2">
+  <div className="sm:flex sm:items-center sm:justify-center space-x-2 my-2 mx-2">
     <label htmlFor="IDSteam">ID Steam:</label>
     <input required type="text" name="IDSteam" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
   </div>
-  <div className="flex items-center justify-center space-x-2 my-2">
+  <div className="sm:flex sm:items-center sm:justify-center space-x-2 my-2 mx-2">
     <label htmlFor="email">Email:</label>
     <input required type="text" name="email" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
   </div>
-  <div className="flex items-center justify-center space-x-2 my-2">
+  <div className="sm:flex sm:items-center sm:justify-center space-x-2 my-2 mx-2">
     <label htmlFor="telefono">Telefono:</label>
     <input type="text" name="telefono" className={valorDelContexto.dark ? 'mx-2 bg-black' : 'mx2' }></input>
   </div>

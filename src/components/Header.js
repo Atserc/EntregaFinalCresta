@@ -9,13 +9,11 @@ function Header() {
     const valorDelContexto = useContext(contexto)
 
     return (
-        <header id="header" className={valorDelContexto.dark ? "headerDark flex justify-between items-center ": "headerLight flex justify-between items-center"}>
+        <header id="header" className={valorDelContexto.dark ? "headerDark sm:flex sm:justify-between sm:items-center": "headerLight sm:flex sm:justify-between sm:items-center"}>
             <NavLink to="/">
-                <img src={imagen} alt="logo" className="logo py-3 px-2" />
+                <img src={imagen} alt="logo" className="logo py-3 px-2 mx-auto" />
             </NavLink>
             
-            <p> Bienvenido a Arg-Skins! </p>
-
             <NavBar />
         </header>
     );

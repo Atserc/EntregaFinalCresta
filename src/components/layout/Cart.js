@@ -31,7 +31,7 @@ function Cart({ carrito, vaciarCarrito, eliminarProducto }) {
                   Producto
                 </th>
                 <th className={borde}>Cantidad</th>
-                <th className={borde}>Precio Unitario</th>
+                <th className={`hidden md:table-cell ${borde}`}>Precio Unitario</th>
                 <th className={borde}>Precio Total</th>
                 <th className={`flex cursor-pointer ${borde}`} onClick={vaciarCarrito} >
                   <img src={CarroX} alt="vaciar carrito" /> 
@@ -52,7 +52,7 @@ function Cart({ carrito, vaciarCarrito, eliminarProducto }) {
                   </td>
                   <td className={borde}>{item.producto.nombre}</td>
                   <td className={borde}>{item.cant}</td>
-                  <td className={borde}>
+                  <td className={`hidden md:table-cell ${borde}`}>
                     ${item.producto.precio.toLocaleString("es-AR")}
                   </td>
                   <td className={borde}>
