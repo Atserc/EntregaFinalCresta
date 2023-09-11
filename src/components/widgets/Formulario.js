@@ -67,6 +67,7 @@ function Formulario({carrito}) {
     Swal.fire({
       title: 'Desea confirmar su compra?',
       showCancelButton: true,
+      cancelButtonText: "Cancelar",
       confirmButtonText: 'Confirmar Compra',
     }).then((result) => {
       if (result.isConfirmed && productos.length > 0) {

@@ -2,6 +2,7 @@ import CarroX from "../../images/icons/cartX.svg"
 import prodX from "../../images/icons/bagX.svg"
 import { useContext } from "react"
 import { contexto } from "../Context";
+import { Link } from "react-router-dom";
 
 function Cart({ carrito, vaciarCarrito, eliminarProducto }) {
 
@@ -75,8 +76,13 @@ function Cart({ carrito, vaciarCarrito, eliminarProducto }) {
           </div>
         </div>
       ) : (
-        <div className="tituloImpact flex justify-center my-5">
+        <div className="tituloImpact flex flex-col items-center my-5">
           <h2>Sin productos en el carro</h2>
+          <Link to="/" className="flex justify-center">
+            <button className="ov-btn-slide-right my-2">
+              Ir a comprar
+            </button>
+          </Link>
         </div>
       )}
     </div>
